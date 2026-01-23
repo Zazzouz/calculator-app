@@ -1,0 +1,85 @@
+.calculator {
+  background-color: #333;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  width: 320px;
+}
+
+.display {
+  background-color: #222;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: right;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #555;
+  color: #fff;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.buttons button:hover {
+  background-color: #666;
+}
+
+.buttons button:active {
+  transform: scale(0.95);
+}
+
+.buttons .operator {
+  background-color: #f39c12;
+  color: #fff;
+}
+
+.buttons .operator:hover {
+  background-color: #e67e22;
+}
+
+.buttons .operator.active {
+  background-color: #fff;
+  color: #f39c12;
+  box-shadow: 0 0 10px rgba(243, 156, 18, 0.6);
+}
+
+.buttons .equals {
+  background-color: #27ae60;
+  color: #fff;
+  grid-column: span 3;
+}
+
+.buttons .equals:hover {
+  background-color: #229954;
+}
+
+.buttons .zero {
+  grid-column: span 2;
+}
+
+.buttons .clear {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.buttons .clear:hover {
+  background-color: #c0392b;
+}
