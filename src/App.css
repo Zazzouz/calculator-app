@@ -1,9 +1,72 @@
+.app-layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
 .calculator {
   background-color: #333;
   border-radius: 16px;
   padding: 20px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
   width: 320px;
+  flex-shrink: 0;
+}
+
+.history-panel {
+  background-color: #333;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  width: 280px;
+  min-height: 200px;
+  flex-shrink: 0;
+}
+
+.history-title {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #555;
+}
+
+.history-list {
+  list-style: none;
+}
+
+.history-item {
+  color: #ccc;
+  font-size: 0.95rem;
+  padding: 8px 0;
+  border-bottom: 1px solid #444;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.history-item:last-child {
+  border-bottom: none;
+}
+
+.history-expression {
+  color: #aaa;
+}
+
+.history-result {
+  color: #27ae60;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.history-empty {
+  color: #666;
+  font-size: 0.9rem;
+  padding: 16px 0;
 }
 
 .display {
